@@ -27,15 +27,17 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
+
   border: 1px solid blue;
   border-radius: 50%;
   background-color: chartreuse;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .root__item--target {
   position: absolute;
   margin-right: 0;
+
   width: 20px;
   height: 20px;
   border: 1px solid blue;
@@ -43,10 +45,44 @@ body {
   background-color: red;
   animation-name: white-circle;
   animation-duration: 1s;
-  animation-timing-function: linear;
+
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
-  bottom: 0;
+}
+.deley1 {
+  animation-delay: 1s;
+  top: 40px;
+  animation-timing-function: 1s;
+}
+.deley2 {
+  animation-delay: 2s;
+  top: 120px;
+  animation-timing-function: 3s;
+}
+.deley3 {
+  animation-delay: 3s;
+  bottom: 360px;
+  animation-timing-function: 6s;
+}
+.deley4 {
+  animation-delay: 4s;
+  bottom: 260px;
+  animation-timing-function: 2s;
+}
+.deley5 {
+  animation-delay: 5s;
+  bottom: 180px;
+  animation-timing-function: 5;
+}
+.deley6 {
+  animation-delay: 6s;
+  bottom: 110px;
+  animation-timing-function: 4;
+}
+.deley7 {
+  animation-delay: 7s;
+  bottom: 40px;
+  animation-timing-function: 1;
 }
 
 @keyframes white-circle {

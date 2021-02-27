@@ -1,14 +1,15 @@
 const rootRef = document.querySelector('.root')
 const rootItemRef = document.querySelector('.root__item')
-const root= document.querySelector(".root__item--target")
-
+const root = document.querySelector(".root__item--target")
+console.log(root)
 rootRef.addEventListener('click', event => {
-    const trY = event.layerY
-    const trX = event.layerX
+    const trY = event.layerY -25
+    const trX = event.layerX -25
         rootItemRef.style.transform=`translate(${trX}px,${trY}px)` 
    
 })
-console.dir(root.style.transform)
+
+    
 const onEntry = ((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
